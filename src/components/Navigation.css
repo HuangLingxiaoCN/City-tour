@@ -1,0 +1,40 @@
+.main-header {
+  background: lightgray;
+  width: 100%;
+}
+
+.main-header div {
+  display: inline-block;
+}
+
+.main-header-anchor {
+  color: darkgreen;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 190px);
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-items {
+  text-align: end;
+}
+
+.main-nav-item {
+  display: inline-block;
+}
+
+.main-nav-item a {
+  color: rgb(62, 134, 62);
+  font-size: 20px;
+  padding: 0 20px;
+  font-weight: 500;
+  text-decoration: inherit;
+}
