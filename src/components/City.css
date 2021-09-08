@@ -1,4 +1,22 @@
 .city {
+  background: whitesmoke;
   display: inline-block;
-  padding: 20px;
+  margin-left: 20px;
+  padding: 20px;  
+  color: #262d58;
+}
+
+.city:hover {
+  background: rgb(209, 205, 205);
+}
+
+.city img {
+  width: 300px;
+  height: 200px; 
+}
+
+.city h2 {
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 2px;
 }
