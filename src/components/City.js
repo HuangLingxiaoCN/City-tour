@@ -32,12 +32,7 @@ export const City = (props) => {
           Vivamus magna justo, lacinia eget consectetur sed, convallis at
           tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at
           sem. Curabitur non nulla sit amet nisl tempus convallis quis ac
-          lectus. Proin eget tortor risus. Vestibulum ac diam sit amet quam
-          vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget
-          tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Mauris
-          blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget
-          tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh
-          pulvinar a.
+          lectus.
         </p>
       )}
     </div>
