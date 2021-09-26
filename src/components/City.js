@@ -7,7 +7,7 @@ export const City = (props) => {
   const toggleInfo = () => {
     setShowInfo((prevState) => {
       return !prevState;
-    })
+    });
   };
 
   return (
@@ -15,16 +15,14 @@ export const City = (props) => {
       <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-        crossorigin="anonymous"
       />
-      <img src={props.city} alt="New York" />
+      <img src={props.img} alt="New York" />
       <h2>{props.name}</h2>
       <p>{props.description}</p>
       <p>
         {props.info}
         <button onClick={toggleInfo}>
-          <i class="fas fa-sort-down"></i>
+          <i className="fas fa-sort-down"></i>
         </button>
       </p>
       {showInfo && (
