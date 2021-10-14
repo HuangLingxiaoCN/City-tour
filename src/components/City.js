@@ -3,6 +3,7 @@ import "./City.css";
 
 export const City = (props) => {
   const [showInfo, setShowInfo] = useState(false);
+  // const [fas, setFas] = useState('fas fa-sort-down');
 
   const toggleInfo = () => {
     setShowInfo((prevState) => {
@@ -22,7 +23,7 @@ export const City = (props) => {
       <p>
         {props.info}
         <button onClick={toggleInfo}>
-          <i className="fas fa-sort-down"></i>
+          <i className={showInfo ? 'fa fa-sort-up' : 'fas fa-sort-down'}></i>
         </button>
       </p>
       {showInfo && (
