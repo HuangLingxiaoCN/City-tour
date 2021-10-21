@@ -1,14 +1,21 @@
-import { useState } from "react";
+import { useReducer } from "react";
 import "./City.css";
 
+function reducer_function(state, action) {
+  switch (action.type) {
+    case 'toggle':
+      return { showInfo: state.showInfo ? false : true };
+    default:
+      return state;
+  }
+}
+
+
 export const City = (props) => {
-  const [showInfo, setShowInfo] = useState(false);
-  // const [fas, setFas] = useState('fas fa-sort-down');
+  const [state, dispatch] = useReducer(reducer_function, {showInfo: false});
 
   const toggleInfo = () => {
-    setShowInfo((prevState) => {
-      return !prevState;
-    });
+    dispatch({ type: 'toggle'});
   };
 
   return (
@@ -23,10 +30,10 @@ export const City = (props) => {
       <p>
         {props.info}
         <button onClick={toggleInfo}>
-          <i className={showInfo ? 'fa fa-sort-up' : 'fas fa-sort-down'}></i>
+          <i className={state.showInfo ? 'fa fa-sort-up' : 'fas fa-sort-down'}></i>
         </button>
       </p>
-      {showInfo && (
+      {state.showInfo && (
         <p className="info">
           Vivamus magna justo, lacinia eget consectetur sed, convallis at
           tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at
